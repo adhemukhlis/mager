@@ -1,6 +1,4 @@
-const hello = (str) => {
-  return alert(str);
-};
+const axiosGroup = require('./src/common/axios-group')
 module.exports = {
-  hello,
-};
+	axiosGroup
+}
