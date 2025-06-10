@@ -1,12 +1,25 @@
 {
 	"name": "mager",
-	"version": "1.2.0",
+	"version": "1.4.0",
 	"description": "repetitive code that gives me hassle",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+	"type": "module",
+	"main": "./dist/index.js",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		},
+		"./getChangedFields": {
+			"import": "./dist/getChangedFields.js",
+			"types": "./dist/getChangedFields.d.ts"
+		}
 	},
-	"dependencies": {},
+	"scripts": {
+		"build": "tsup"
+	},
+	"files": [
+		"dist"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/adhemukhlis/mager.git"
@@ -21,5 +34,9 @@
 	"bugs": {
 		"url": "https://github.com/adhemukhlis/mager/issues"
 	},
-	"homepage": "https://github.com/adhemukhlis/mager#readme"
+	"homepage": "https://github.com/adhemukhlis/mager#readme",
+	"devDependencies": {
+		"tsup": "^8.5.0",
+		"typescript": "^5.8.3"
+	}
 }
