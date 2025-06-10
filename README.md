@@ -1,7 +1,9 @@
 # mager
 
-**Mager** adalah koleksi pribadi saya dari kode-kode berulang yang membuat saya repot
+**Mager** koleksi kode siap pakai
+> Maka sesungguhnya bersama kesulitan ada kemudahan
 
+> ✨ mudah emosi ✨
 ---
 
 ## Table of Contents
@@ -76,7 +78,7 @@ console.log(payload)
 
 /**
  * catatan : id akan selalu disertakan (karena key `id` masuk ke dalam `include`)
- * jika tidak ada perubahan value id akan diambil dari initial, jika terdapat perubahan value akan diambil dari changed
+ * jika tidak ada perubahan pada value id, value akan diambil dari initial, jika terdapat perubahan value akan diambil dari changed
  **/
 ```
 
